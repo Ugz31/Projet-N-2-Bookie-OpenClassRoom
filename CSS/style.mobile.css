@@ -1,0 +1,235 @@
+/* CONTAINER */
+.container {
+  max-width: 380px;
+  padding: 0;
+  margin: auto;
+}
+
+/* VARIABLE */
+
+.m-mobile {
+  margin: 0rem 2rem 3.2rem 2rem;
+}
+
+.p-mobile {
+  padding: 2.6rem 2rem 4.5rem 2rem;
+}
+
+/* I.HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.1rem;
+}
+
+.logo {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+nav {
+  width: 100%;
+  height: 65px;
+}
+
+header nav ul li {
+  width: 50%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-bottom: 3px solid var(--gray-light);
+}
+
+/* Hover  */
+header nav ul li:active {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  border-top: none;
+}
+
+/* II.RESEARCH */
+
+.research h2 {
+  margin-bottom: 3.6rem;
+}
+
+.btn button {
+  /* efface le texte */
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  font-weight: none;
+}
+
+.btn button::before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+/* III.FILTERS */
+
+.filters {
+  width: 340px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.filters h3 {
+  margin-bottom: 1.5rem;
+  margin-right: 0;
+}
+
+.container-filt {
+  display: flex;
+  flex-flow: row wrap;
+  width: 335px;
+  gap: 15px;
+}
+
+/* Bouton */
+
+.btn-filters i {
+  font-size: 2rem;
+  margin: 1.6rem 0.7rem 1.3rem 1rem;
+}
+
+.btn-filters {
+  width: 16rem;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* V. MAIN/ARTICLE/OFFER-ARTICLE */
+
+main {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: start;
+  margin-bottom: 8rem;
+}
+
+.container-offer {
+  margin-right: 0;
+  border-radius: 20px;
+  background: white;
+  border-radius: 0;
+  margin-bottom: 0rem;
+}
+
+.container-offer h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.9rem;
+  margin-left: 0;
+}
+
+.offer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: flex-start;
+  min-width: 335px;
+  margin-bottom: 0;
+  gap: 12px;
+}
+
+/* nouvelle classe pour modifier seulement la partie OFFER */
+.mobile-form {
+  width: 335px;
+  height: 19.9rem;
+  margin: 0;
+}
+
+.add {
+  display: none;
+}
+
+/* B. Offres populaires */
+
+.container-p-offer {
+  border-radius: 0;
+}
+
+.offer-popular {
+  flex-flow: column nowrap;
+  gap: 11px;
+}
+
+.reverse {
+  width: 334px;
+  margin: 0;
+}
+
+.container-img-popular {
+  min-width: 137px;
+}
+
+.reverse .container-img-popular .offer-img {
+  margin: none;
+  width: 137px;
+}
+
+/* VI. ACTIVITES */
+
+.container-activities h2 {
+  width: 210px;
+  margin-bottom: 0.5rem;
+}
+
+.activities {
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.article-activities {
+  width: 335px;
+  max-height: 190px;
+}
+
+.article-activities img {
+  width: 335px;
+  max-height: 190px;
+}
+
+.article-activities p {
+  margin: 2rem 0;
+  padding-left: 1.9rem;
+}
+
+/* VII.FOOTER */
+
+footer {
+  background: var(--gray-light);
+  height: auto;
+}
+
+.container-footer {
+  padding: 0;
+  margin: 5rem 3rem;
+  background: var(--gray-light);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0;
+  width: 195px;
+  height: 395px;
+}
+
+.container-footer div {
+  margin-left: 0rem;
+}

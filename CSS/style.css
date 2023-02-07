@@ -1,0 +1,532 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+  --primary: #0065fc;
+  --secondary: #deebff;
+  --gray: #d9d9d9;
+  --gray-light: #f2f2f2;
+}
+
+.cprimary {
+  color: var(--primary);
+}
+
+.cgray-light {
+  color: var(--gray-light);
+}
+
+/* Général  */
+
+:root {
+  /* 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  background: var(--gray-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 5.5rem 0rem 5.5rem;
+  background: white;
+  /* RESPONSIVE / A MODIFIER */
+  max-width: 1450px;
+  margin: auto;
+}
+
+/* I. HEADER  */
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 5.3rem;
+}
+
+.logo {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 4.4rem 0;
+}
+
+.logo a {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.logo a img {
+  width: 6.1rem;
+  height: 1.9rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header nav ul li {
+  padding: 4.4rem 3.5rem;
+}
+
+/* II. RESEARCH  */
+
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.research h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.research p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+/* A. Bouton  */
+
+.btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  height: 4.9rem;
+}
+
+.btn div {
+  width: 5rem;
+  height: 5rem;
+  background: var(--gray-light);
+  border: 1px solid var(--gray-light);
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn div i {
+  width: 1.4rem;
+  height: 1.8rem;
+  text-align: center;
+}
+
+.btn input {
+  border: 1px solid var(--gray-light);
+  height: 49px;
+  width: 230px;
+  padding-left: 1.7rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+::placeholder {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.btn button {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  background: var(--primary);
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+}
+
+/* III. FILTERS */
+
+.filters {
+  width: 850px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.filters h3 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.container-filt {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+
+/* A. Bouton Filtre  */
+
+.btn-filters {
+  height: 4.8rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid var(--gray);
+  border-radius: 25px;
+  background: white;
+  padding: 10px 15px 10px 10px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.btn-filters i {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin: 1.3rem 1rem 1.3rem 1rem;
+}
+
+/* IV. INFO */
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 3.9rem;
+}
+
+.info i {
+  color: var(--primary);
+  font-size: 2.4rem;
+  margin-right: 1.1rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+}
+
+/* V. OFFER  */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+/* A. Offres */
+.container-offer {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-light);
+  padding: 4.2rem 2.5rem 4.6rem 2.5rem;
+  margin-right: 2.4rem;
+  border-radius: 20px;
+}
+
+.container-offer h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  margin-left: 1.5rem;
+}
+
+.offer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  /* RESPONSIVE / MODIFIER  */
+  min-width: 830px;
+  /* problématique par rapport au Wrap / Container qui était trop volumineux après un wrap */
+  width: min-content;
+  flex: auto;
+  margin-bottom: 1rem;
+}
+
+.offer-article {
+  width: 24.6rem;
+  height: 19.9rem;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1.5rem;
+  overflow: hidden;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  transition: all 0.5s ease-out;
+}
+
+.container-img {
+  height: 124px;
+}
+
+.offer-img {
+  border: 0.5rem solid #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  margin: 0.4rem 2.6rem 1.1rem 1.6rem;
+}
+
+.offer-text h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.offer-text p,
+.offer-text p strong {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.offer-stars {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.offer-stars i {
+  font-size: 1.2rem;
+}
+
+.add {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+/* B. Offres populaires */
+
+.container-p-offer {
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: start;
+  background: var(--gray-light);
+  padding: 4.1rem 4rem 0.1rem 3.7rem;
+  border-radius: 20px;
+}
+
+.title-p-offer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.title-p-offer h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.6rem;
+}
+
+.title-p-offer i {
+  color: var(--primary);
+}
+
+.offer-popular {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 33px;
+}
+
+.reverse {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 343px;
+  height: 144px;
+  margin: 0;
+}
+
+.container-img-popular {
+  min-width: 137px;
+  min-height: 144px;
+}
+
+.reverse .container-img-popular .offer-img {
+  border: 0.5rem solid #ffffff;
+  border-radius: 20px 0px 0px 20px;
+  display: block;
+  margin: auto;
+  width: 137px;
+  height: 144px;
+}
+
+.reverse .offer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1.6rem 2.2rem 1.2rem 1.5rem;
+}
+
+/* VI. ACTIVITES */
+
+.container-activities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 6.1rem;
+}
+
+.container-activities h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.85rem;
+}
+
+.activities {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.3rem;
+}
+
+.article-activities {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 445px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
+  background: #ffffff;
+  transition: all 0.5s ease-out;
+}
+
+.article-activities img {
+  background: #ffffff;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.article-activities p {
+  flex: auto;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2rem 2rem 2.1rem 1.9rem;
+  background: #ffffff;
+}
+
+/* VII. FOOTER  */
+
+.container-footer {
+  background: var(--gray-light);
+  padding: 4.5rem 0rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 23rem;
+}
+
+.container-footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-footer div h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.container-footer div a {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.mx-7 {
+  margin-left: 7rem;
+}
+
+/* HOVER/ACTIVE  */
+
+footer div a:active,
+footer div a:hover {
+  color: var(--primary);
+}
+
+header nav ul li:active {
+  color: var(--primary);
+  border-top: 2px solid var(--primary);
+}
+
+header nav ul li a:hover {
+  color: var(--primary);
+}
+
+.btn-filters:active,
+.btn-filters:hover {
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.offer-article:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.article-activities:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
