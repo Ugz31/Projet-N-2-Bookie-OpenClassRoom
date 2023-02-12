@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET : */
 
 * {
   margin: 0;
@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-/* Variables */
+/* VARIABLES : */
 
+/* couleur */
 :root {
   --primary: #0065fc;
   --secondary: #deebff;
@@ -15,6 +16,7 @@
   --gray-light: #f2f2f2;
 }
 
+/* couleur etoiles  */
 .cprimary {
   color: var(--primary);
 }
@@ -23,7 +25,7 @@
   color: var(--gray-light);
 }
 
-/* Général  */
+/* GENERAL :  */
 
 :root {
   /* 10px */
