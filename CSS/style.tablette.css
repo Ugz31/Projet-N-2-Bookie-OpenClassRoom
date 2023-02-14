@@ -9,9 +9,12 @@
 /* SECTION FILTERS  */
 
 .filters {
-  width: 850px;
+  width: 100%;
 }
 
+.filters h3 {
+  margin-right: 2rem;
+}
 .btn input {
   padding-right: 3rem;
 }
@@ -22,36 +25,41 @@
 
 /* MAIN / ARTICLE  */
 
-main {
+.main-container {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 6rem;
 }
 
 .container-offer {
+  width: 100%;
   margin-right: 0;
   margin-bottom: 5.3rem;
 }
 
 .container-p-offer {
-  padding: 3.4rem 4rem 4.8rem 4rem;
+  padding: 3.4rem 2rem 4.8rem 2rem;
+  width: 100%;
 }
 
 .offer-popular {
   flex-flow: row nowrap;
-  gap: 23px;
+  gap: 20px;
 }
 
 .reverse {
-  width: 252px;
+  width: calc(90% / 3);
+  height: auto;
 }
 
 .container-img-popular {
   min-width: 106px;
+  height: 100%;
 }
 
 .reverse .container-img-popular .offer-img {
   width: 106px;
+  height: 100%;
 }
 
 /* ACTIVITES  */
@@ -65,7 +73,7 @@ main {
 }
 
 .article-activities {
-  width: 182px;
+  /* width: 182px; */
   max-height: 267px;
 }
 

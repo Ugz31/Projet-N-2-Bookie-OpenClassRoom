@@ -66,16 +66,23 @@ img {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0rem 5.5rem 0rem 5.5rem;
+  padding: 0rem 5rem 0rem 5rem;
   background: white;
   /* RESPONSIVE / A MODIFIER */
-  max-width: 1450px;
+  max-width: 1400px;
   margin: auto;
 }
 
-/* I. HEADER  */
+/* HEADER  */
 
 header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* I. HEADER-TOP */
+
+.header-top {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -99,12 +106,13 @@ header {
   height: 1.9rem;
 }
 
-header nav ul {
+.header-top nav ul {
   display: flex;
   flex-flow: row nowrap;
 }
 
-header nav ul li {
+.header-top nav ul li a {
+  display: block;
   padding: 4.4rem 3.5rem;
 }
 
@@ -218,7 +226,7 @@ header nav ul li {
   border: 0.2rem solid var(--gray);
   border-radius: 25px;
   background: white;
-  padding: 10px 15px 10px 10px;
+  padding: 10px 8px 10px 8px;
   font-size: 1.7rem;
   font-weight: bold;
 }
@@ -250,22 +258,25 @@ header nav ul li {
 }
 
 /* V. OFFER  */
-
 main {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 6rem;
 }
 
 /* A. Offres */
 .container-offer {
-  flex: 0 1 auto;
+  width: 69%;
   display: flex;
   flex-direction: column;
   background: var(--gray-light);
-  padding: 4.2rem 2.5rem 4.6rem 2.5rem;
-  margin-right: 2.4rem;
+  padding: 4.2rem 1.7rem 4.6rem 1.7rem;
   border-radius: 20px;
 }
 
@@ -282,7 +293,7 @@ main {
   justify-content: start;
   align-items: center;
   /* RESPONSIVE / MODIFIER  */
-  min-width: 830px;
+  min-width: 100%;
   /* problématique par rapport au Wrap / Container qui était trop volumineux après un wrap */
   width: min-content;
   flex: auto;
@@ -290,20 +301,20 @@ main {
 }
 
 .offer-article {
-  width: 24.6rem;
-  height: 19.9rem;
+  width: calc(90% / 3);
+  height: 200px;
   background: white;
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
-  margin: 1.5rem;
+  margin: 1rem;
   overflow: hidden;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: all 0.5s ease-out;
 }
 
 .container-img {
-  height: 124px;
+  height: 60%;
 }
 
 .offer-img {
@@ -317,6 +328,7 @@ main {
 }
 
 .offer-text {
+  height: 40%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -354,13 +366,13 @@ main {
 /* B. Offres populaires */
 
 .container-p-offer {
-  flex: 0 1 auto;
+  width: 30%;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
   justify-content: start;
   background: var(--gray-light);
-  padding: 4.1rem 4rem 0.1rem 3.7rem;
+  padding: 4.1rem 3rem 0.1rem 3rem;
   border-radius: 20px;
 }
 
@@ -389,14 +401,14 @@ main {
 .reverse {
   display: flex;
   flex-flow: row nowrap;
-  width: 343px;
-  height: 144px;
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
 .container-img-popular {
   min-width: 137px;
-  min-height: 144px;
+  height: 144px;
 }
 
 .reverse .container-img-popular .offer-img {
@@ -405,7 +417,8 @@ main {
   display: block;
   margin: auto;
   width: 137px;
-  height: 144px;
+  height: 100%;
+  object-fit: fill cover;
 }
 
 .reverse .offer-text {
@@ -441,7 +454,7 @@ main {
 .article-activities {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: calc(100% / 4);
   height: 445px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   border-radius: 20px;
@@ -452,18 +465,20 @@ main {
 .article-activities img {
   background: #ffffff;
   width: 300px;
-  height: 100%;
-  margin: auto;
+  height: 87%;
   object-fit: cover;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
 
 .article-activities p {
-  flex: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 13%;
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 2rem 2rem 2.1rem 1.9rem;
+  margin: auto 2rem;
   background: #ffffff;
 }
 
@@ -471,10 +486,10 @@ main {
 
 .container-footer {
   background: var(--gray-light);
-  padding: 4.5rem 0rem;
+  padding: 4.5rem 5rem;
   display: flex;
   flex-flow: row nowrap;
-  gap: 23rem;
+  justify-content: space-between;
 }
 
 .container-footer div {
@@ -493,10 +508,6 @@ main {
   margin-bottom: 1.2rem;
 }
 
-.mx-7 {
-  margin-left: 7rem;
-}
-
 /* HOVER/ACTIVE  */
 
 footer div a:active,
@@ -504,13 +515,14 @@ footer div a:hover {
   color: var(--primary);
 }
 
-header nav ul li:active {
+.header-top nav ul li a:active {
   color: var(--primary);
   border-top: 2px solid var(--primary);
 }
 
-header nav ul li a:hover {
+.header-top nav ul li a:hover {
   color: var(--primary);
+  border-top: 2px solid var(--primary);
 }
 
 .btn-filters:active,

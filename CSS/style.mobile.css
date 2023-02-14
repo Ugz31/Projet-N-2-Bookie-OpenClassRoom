@@ -17,7 +17,7 @@
 
 /* I.HEADER */
 
-header {
+.header-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,18 +36,31 @@ nav {
   height: 65px;
 }
 
-header nav ul li {
+.header-top nav ul li {
   width: 50%;
   height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+.header-top nav ul li a {
+  padding: auto;
+  width: 100%;
+  height: 65px;
+  text-align: center;
   border-bottom: 3px solid var(--gray-light);
 }
 
 /* Hover  */
-header nav ul li:active {
+.header-top nav ul li a:active {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  border-top: none;
+}
+
+.header-top nav ul li a:hover {
   color: var(--primary);
   border-bottom: 3px solid var(--primary);
   border-top: none;
@@ -108,12 +121,12 @@ header nav ul li:active {
   flex-flow: row nowrap;
   justify-content: start;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* V. MAIN/ARTICLE/OFFER-ARTICLE */
 
-main {
+.main-container {
   display: flex;
   flex-flow: column-reverse nowrap;
   justify-content: start;
@@ -169,6 +182,7 @@ main {
 
 .reverse {
   width: 334px;
+  height: 144px;
   margin: 0;
 }
 
