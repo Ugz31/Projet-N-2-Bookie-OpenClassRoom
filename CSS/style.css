@@ -281,7 +281,7 @@ main {
 }
 
 .container-offer h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
   margin-left: 1.5rem;
@@ -301,7 +301,7 @@ main {
 }
 
 .offer-article {
-  width: calc(90% / 3);
+  width: calc(85% / 3);
   height: 200px;
   background: white;
   border-radius: 20px;
@@ -336,14 +336,14 @@ main {
 }
 
 .offer-text h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
 
 .offer-text p,
 .offer-text p strong {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -369,10 +369,10 @@ main {
   width: 30%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   background: var(--gray-light);
-  padding: 4.1rem 3rem 0.1rem 3rem;
+  padding: 4.1rem 2.5rem 0.1rem 2.5rem;
   border-radius: 20px;
 }
 
@@ -384,7 +384,7 @@ main {
 }
 
 .title-p-offer h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 2.6rem;
 }
 
